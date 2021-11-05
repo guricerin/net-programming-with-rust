@@ -1,5 +1,5 @@
 [package]
-name = "chap1-socket-programming"
+name = "ch1-socket-programming"
 version = "0.1.0"
 edition = "2021"
 
