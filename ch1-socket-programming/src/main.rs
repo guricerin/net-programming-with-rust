@@ -4,6 +4,8 @@ use std::env;
 
 mod tcp_client;
 mod tcp_server;
+mod udp_client;
+mod udp_server;
 
 fn main() -> Result<()> {
     env::set_var("RUST_LOG", "debug");
@@ -32,10 +34,10 @@ fn main() -> Result<()> {
         },
         "udp" => match role {
             "server" => {
-                // todo
+                udp_server::serve(address)?;
             }
             "client" => {
-                // todo
+                udp_client::communicate(address)?;
             }
             _ => {
                 missing_role()?;
