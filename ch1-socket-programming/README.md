@@ -1,4 +1,4 @@
-# chap1. socket-programming
+# chapter 1. socket-programming
 
 ## Usage
 

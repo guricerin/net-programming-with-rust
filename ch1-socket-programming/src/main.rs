@@ -24,7 +24,7 @@ fn main() -> Result<()> {
                 tcp_server::serve(address)?;
             }
             "client" => {
-                // todo
+                tcp_client::connect(address)?;
             }
             _ => {
                 missing_role()?;
