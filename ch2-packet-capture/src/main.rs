@@ -63,7 +63,7 @@ fn main() -> Result<()> {
                 }
             }
             Err(e) => {
-                eprint!("{:?}", e);
+                eprintln!("{:?}", e);
             }
         }
     }
