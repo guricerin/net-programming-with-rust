@@ -215,6 +215,7 @@ fn create_msg_from_code(status_code: u16, msg: Option<Vec<u8>>) -> Result<Vec<u8
         _ => Err(anyhow!("Undefined status code.")),
     }
 }
+
 fn main() -> Result<()> {
     env::set_var("RUST_LOG", "debug");
     env_logger::init();
